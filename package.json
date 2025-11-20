@@ -6,7 +6,7 @@
   "homepage": "http://trompakv.github.io/interactive-games",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/interactive-games/",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
