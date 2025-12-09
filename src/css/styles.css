@@ -3,23 +3,30 @@
 @import url("./header.css");
 
 :root {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+    --font-family: "Montserrat Alternates", sans-serif;
+    --font-size: 16px;
+    --line-height: 24px;
+    --font-weight: 400;
 
-    color: #242424;
-    background-color: rgba(255, 255, 255, 0.87);
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+    --color: #161616;
+    --bg-color: #fff;
+    --bg-hover-color: #eeeeee;
+}
+:root[data-theme="dark"] {
+    --color: #ebebeb;
+    --bg-color: #080808;
+    --bg-hover-color: #313131;
 }
 
 body {
     background: url("../img/background.png");
+    background-color: #eeeeee;
+    color: var(--color);
+
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--font-height);
+
     background-size: cover;
     background-repeat: no-repeat;
 }
