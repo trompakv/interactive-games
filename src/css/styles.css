@@ -2,6 +2,7 @@
 @import url("./reset.css");
 @import url("./header.css");
 @import url("./footter.css");
+@import url("./modalWindow.css");
 
 :root {
     --font-family: "Montserrat Alternates", sans-serif;
