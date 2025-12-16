@@ -10,33 +10,33 @@
 :root[data-theme="dark"] {
     --color: #ebebeb;
     --bg-color: #080808;
-    --bg-hover-color: #313131; 
+    --bg-hover-color: #313131;
 }
-.section-calculator{
+.section-calculator {
     text-align: center;
     margin-top: 36px;
     box-sizing: border-box;
     font-family: var(--font-family);
     font-weight: var(--font-weight);
 }
-.section-calculator__title{
+.section-calculator__title {
     margin-bottom: 36px;
     font-weight: var(--font-weight);
     font-size: var(--font-size);
 }
-.calculator-container{
+.calculator-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.calculator-operators{
+.calculator-operators {
     display: grid;
     grid-template-columns: repeat(2, 27px);
     grid-template-rows: repeat(2, 25px);
     gap: 10px;
     border-radius: 20px;
 }
-.op-btn{
+.op-btn {
     width: 27px;
     height: 25px;
     border-radius: 20px;
@@ -47,7 +47,7 @@
     cursor: pointer;
     box-shadow: 3px 3px 0px 0px #00000040;
 }
-.op-btn__equals{
+.op-btn__equals {
     width: 27px;
     height: 25px;
     border-radius: 20px;
@@ -58,7 +58,7 @@
     cursor: pointer;
     box-shadow: 3px 3px 0px 0px #00000040;
 }
-.enter-number__primary{
+.enter-number__primary {
     width: 135px;
     height: 35px;
     border-radius: 20px;
@@ -70,20 +70,18 @@
     margin-right: 38px;
     text-align: center;
     box-shadow: 3px 3px 0px 0px #00000040;
-    transition: 
-    backgroung-color 0.2s ease,
-    border-color 0.2 ease,
-    box-shadow 0.2s ease;
+    transition: backgroung-color 0.2s ease, border-color 0.2 ease,
+        box-shadow 0.2s ease;
 }
-.enter-number__primary:hover{
+.enter-number__primary:hover {
     background-color: var(--bg-hover-color);
 }
-.enter-number__primary:focus{
+.enter-number__primary:focus {
     background-color: #fff;
     border-color: #000;
     box-shadow: 3px 3px 0px 0px #00000060;
 }
-.enter-number__secondary{
+.enter-number__secondary {
     width: 135px;
     height: 35px;
     border-radius: 20px;
@@ -96,20 +94,18 @@
     margin-right: 38px;
     text-align: center;
     box-shadow: 3px 3px 0px 0px #00000040;
-    transition: 
-    backgroung-color 0.2s ease,
-    border-color 0.2 ease,
-    box-shadow 0.2s ease;
+    transition: backgroung-color 0.2s ease, border-color 0.2 ease,
+        box-shadow 0.2s ease;
 }
-.enter-number__secondary:hover{
-   background-color: var(--bg-hover-color);
+.enter-number__secondary:hover {
+    background-color: var(--bg-hover-color);
 }
-.enter-number__secondary:focus{
+.enter-number__secondary:focus {
     background-color: #fff;
     border-color: #000;
     box-shadow: 3px 3px 0px 0px #00000060;
 }
-.input-result{
+.input-result {
     width: 135px;
     height: 35px;
     border-radius: 20px;
@@ -122,7 +118,7 @@
     text-align: center;
     box-shadow: 3px 3px 0px 0px #00000040;
 }
-.calculator-line{
+.calculator-line {
     width: 536px;
     height: 1px;
     border: 1px;
@@ -132,19 +128,17 @@
 }
 .op-btn,
 .op-btn__equals {
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    background-color 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease,
+        background-color 0.15s ease;
 }
 .op-btn:hover,
 .op-btn__equals:hover {
-  background-color: #222;
-  transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0px 0px #00000060;
+    background-color: #222;
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px 0px #00000060;
 }
 .op-btn:active,
 .op-btn__equals:active {
-  transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0px 0px #00000060;
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px 0px #00000060;
 }

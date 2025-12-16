@@ -29,7 +29,7 @@
     filter: invert(100%);
 }
 body {
-    background: url("../img/background.png");
+    background: url("/img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

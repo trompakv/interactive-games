@@ -150,7 +150,7 @@
         left: 0%;
 
         background: #fff;
-        background-image: url("../img/sun.svg");
+        background-image: url("/img/sun.svg");
         background-position: 75% 75%;
         background-size: 15px;
         background-repeat: no-repeat;
@@ -160,7 +160,7 @@
 }
 .header__right__changeThemeButton[data-theme="dark"]
     .header__right__changeThemeButton__circle {
-    background-image: url("../img/moon.svg");
+    background-image: url("/img/moon.svg");
     background-color: #000;
     left: 50%;
     border-color: var(--color);
