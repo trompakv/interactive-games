@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("./reset.css");
 @import url("./header.css");
+@import url("./calculator.css");
 @import url("./footer.css");
+
+:root {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
 
 :root {
     --font-family: "Montserrat Alternates", sans-serif;
@@ -21,20 +28,11 @@
 :root[data-theme="dark"] .logo {
     filter: invert(100%);
 }
-
 body {
     background: url("../img/background.png");
-    background-color: #eeeeee;
-    color: var(--color);
-
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    line-height: var(--font-height);
-
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .container {
     max-width: 1090px;
     margin: 0 auto;
