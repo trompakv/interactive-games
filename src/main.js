@@ -1,1 +1,1 @@
-// import "./js/test"; -- без .js
+import "/js/slider";
