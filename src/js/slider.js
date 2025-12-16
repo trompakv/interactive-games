@@ -1,38 +1,38 @@
 const teamData = [
   {
-    name: "Visly",
-    info: "Хедер + скрипт зміни теми, перевірка, чи рік народження високосний",
-    photo: "public/img/vasil.png",
+    name: "Василь ",
+    info: "Хедер + скрипт зміни теми, перевірка, чи рік народження високосний LOS TRALALERITOS DICEN TRALALA",
+    photo: "img/vasil.png",
   },
   {
     name: "Кароліна",
     info: "Гра «Камінь-Ножиці-Папір»,",
-    photo: "public/img/chel.png",
+    photo: "img/chel.png",
   },
   {
     name: "Вероніка",
     info: "Розробив архітектуру проєкту та бекенд частину.",
-    photo: "public/img/chel.png",
+    photo: "img/chel.png",
   },
   {
     name: "Макс",
     info: "Футер + модальне вікно підписки, Калькулятор: сума, різниця, множення, ділення двох чисел",
-    photo: "public/img/max.png",
+    photo: "img/max.png",
   },
   {
     name: "Матвій",
     info: "Гра «Google динозаврик», модальне вікно привітання, гра «Вгадай число»",
-    photo: "public/img/chel.png",
+    photo: "img/chel.png",
   },
   {
     name: "Єгор",
     info: "Конвертер хвилин у години:хвилини, робота з масивом об’єктів вчених",
-    photo: "public/img/chel.png",
+    photo: "img/chel.png",
   },
   {
     name: "Miша",
     info: "Слайдер зображень",
-    photo: "public/img/misha.jpg",
+    photo: "img/misha.jpg",
   },
 ];
 
