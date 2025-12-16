@@ -23,6 +23,8 @@
 }
 
 .footer-communication_list-item {
+    color: var(--color);
+
     &:hover {
         text-decoration: underline;
     }
