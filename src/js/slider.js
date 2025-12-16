@@ -1,38 +1,38 @@
 const teamData = [
   {
-    name: "Василь",
+    name: "Visly",
     info: "Хедер + скрипт зміни теми, перевірка, чи рік народження високосний",
-    photo: "img/vasil.png",
+    photo: "public/img/vasil.png",
   },
   {
     name: "Кароліна",
-    info: "Гра «Камінь-Ножиці-Папір»",
-    photo: "",
+    info: "Гра «Камінь-Ножиці-Папір»,",
+    photo: "public/img/chel.png",
   },
   {
     name: "Вероніка",
-    info: "Поле з м’ячем, Користувач вводить 3 числа → на екран виводиться найбільше",
-    photo: "",
+    info: "Розробив архітектуру проєкту та бекенд частину.",
+    photo: "public/img/chel.png",
   },
   {
     name: "Макс",
-    info: "Калькулятор: сума, різниця, множення, ділення двох чисел, футер + модальне вікно підписки",
-    photo: "",
+    info: "Футер + модальне вікно підписки, Калькулятор: сума, різниця, множення, ділення двох чисел",
+    photo: "public/img/max.png",
   },
   {
     name: "Матвій",
-    info: "Модальне вікно привітання, Гра «Вгадай число», гра «Google динозаврик»",
-    photo: "",
+    info: "Гра «Google динозаврик», модальне вікно привітання, гра «Вгадай число»",
+    photo: "public/img/chel.png",
   },
   {
     name: "Єгор",
     info: "Конвертер хвилин у години:хвилини, робота з масивом об’єктів вчених",
-    photo: "",
+    photo: "public/img/chel.png",
   },
   {
-    name: "Мiша",
+    name: "Miша",
     info: "Слайдер зображень",
-    photo: "",
+    photo: "public/img/misha.jpg",
   },
 ];
 
@@ -62,6 +62,7 @@ function createIndicators() {
   indicatorsContainer.innerHTML = "";
   teamData.forEach((_, index) => {
     const dot = document.createElement("div");
+
     dot.classList.add("indicator");
     if (index === currentIndex) dot.classList.add("active");
 
@@ -75,7 +76,7 @@ function createIndicators() {
 }
 
 function updateIndicators() {
-  const dots = document.querySelectorAll(".indicator");
+  const dots = indicatorsContainer.querySelectorAll(".indicator");
   dots.forEach((dot, index) => {
     if (index === currentIndex) {
       dot.classList.add("active");

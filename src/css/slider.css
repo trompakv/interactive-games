@@ -1,133 +1,122 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  background-color: #fff;
-}
-
-.team-section {
+.team-slider-wrapper {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
+  margin: 0 auto;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
 }
 
-.divider {
-  border: 0;
-  height: 1px;
-  background: #797979;
-  margin: 40px auto;
-  width: 80%;
+.team-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: var(--color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 40px;
-  color: #000000;
+.team-divider {
+  display: none;
 }
 
-.slider-container {
+.team-slider-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   position: relative;
-}
-
-.arrow {
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.arrow:hover {
-  opacity: 0.6;
-}
-
-.arrow-icon {
-  width: 20px;
-  height: 20px;
-  border-top: 2px solid #000000;
-  border-right: 2px solid #000000;
-  transform: rotate(45deg);
-}
-
-.arrow-left .arrow-icon {
-  transform: rotate(-135deg);
-}
-
-.student-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 400px;
-  min-height: 250px;
-}
-
-.student-photo {
-  width: 150px;
-  height: 150px;
-  background-color: #d9d9d9;
-  border-radius: 20px;
-  object-fit: cover;
-  margin-bottom: 20px;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.student-name {
-  font-size: 18px;
-  margin: 0 0 10px 0;
-  font-weight: normal;
-}
-
-.student-info {
-  font-size: 14px;
-  color: #000000;
-  margin: 0;
-  line-height: 1.5;
   padding: 0 10px;
 }
 
-.indicators {
+.team-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, opacity 0.3s;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+}
+
+.team-arrow:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.team-arrow-icon {
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid var(--color);
+  border-right: 2px solid var(--color);
+  transform: rotate(45deg);
+}
+
+.team-arrow-left .team-arrow-icon {
+  transform: rotate(-135deg);
+}
+
+.team-student-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  min-height: 300px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.team-student-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 35px;
+  background-color: var(--photo-placeholder-bg);
+  object-fit: cover;
+  margin-bottom: 25px;
+  box-shadow: var(--card-shadow);
+}
+
+.team-student-name {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  color: var(--color);
+}
+
+.team-student-info {
+  font-size: 16px;
+  color: var(--color);
+  opacity: 0.7;
+  margin: 0;
+  line-height: 1.5;
+  padding: 0 10px;
+  max-width: 350px;
+}
+
+.team-indicators {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-top: 30px;
-  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
 }
 
-.indicator {
-  width: 25px;
-  height: 3px;
-  background-color: #d9d9d9;
+.team-indicators .indicator {
+  width: 30px;
+  height: 4px;
+  background-color: var(--indicator-color);
   cursor: pointer;
   transition: background-color 0.3s;
+  border-radius: 4px;
 }
 
-.indicator.active {
-  background-color: #797979;
-}
-
-@media (max-width: 600px) {
-  .slider-container {
-    gap: 5px;
-  }
-  .arrow {
-    width: 30px;
-  }
-  .student-card {
-    width: 260px;
-  }
+.team-indicators .indicator.active {
+  background-color: var(--indicator-active-color);
 }

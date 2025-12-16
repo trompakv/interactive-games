@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <section class="team-section team-slider-wrapper"> 
+            
+            <hr class="team-divider">
 
-    <section class="team-section">
-        <hr class="divider">
+            <h2 class="team-title">Наша команда</h2>
 
-        <h2>Наша команда</h2>
+            <div class="team-slider-container">
+                <button class="team-arrow team-arrow-left" id="prevBtn">
+                    <div class="team-arrow-icon"></div>
+                </button>
 
-        <div class="slider-container">
-            <button class="arrow arrow-left" id="prevBtn">
-                <div class="arrow-icon"></div>
-            </button>
+                <div class="team-student-card">
+                    <img src="" alt="Фото студента" class="team-student-photo" id="photo">
+                    
+                    <h3 class="team-student-name" id="name">Ім'я</h3>
+                    <p class="team-student-info" id="info">Опис роботи</p>
+                </div>
 
-            <div class="student-card">
-                <img src="" alt="Фото студента" class="student-photo" id="photo">
-                
-                <h3 class="student-name" id="name">Ім'я</h3>
-                <p class="student-info" id="info">Опис роботи</p>
+                <button class="team-arrow team-arrow-right" id="nextBtn">
+                    <div class="team-arrow-icon"></div>
+                </button>
             </div>
 
-            <button class="arrow arrow-right" id="nextBtn">
-                <div class="arrow-icon"></div>
-            </button>
-        </div>
+            <div class="team-indicators" id="indicators-container"></div>
 
-        <div class="indicators" id="indicators-container"></div>
-
-        <hr class="divider">
-    </section>
-
-    <script src="script.js"></script>
+            <hr class="team-divider">
+        </section>
+        
+    </div> <script src="script.js"></script>
 </body>
 </html>
