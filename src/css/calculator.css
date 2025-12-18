@@ -104,14 +104,7 @@
     text-align: center;
     box-shadow: 3px 3px 0px 0px #00000040;
 }
-.calculator-line {
-    width: 536px;
-    height: 1px;
-    border: 1px;
-    margin: 40px auto;
-    background-color: #000;
-    margin-top: 36px;
-}
+
 .op-btn,
 .op-btn__equals {
     transition: transform 0.15s ease, box-shadow 0.15s ease,
