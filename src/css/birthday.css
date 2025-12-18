@@ -11,14 +11,7 @@
     width: 100%;
 }
 
-.section__title {
-    text-align: center;
-    font-weight: var(--font-weight);
-}
 
-.section__subtitle {
-    font-weight: var(--font-weight);
-}
 
 .birthday__checker {
     display: flex;
