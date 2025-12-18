@@ -2,15 +2,8 @@
     text-align: center;
     margin-top: 36px;
     box-sizing: border-box;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight);
     background-color: var(--bg-color);
     color: var(--color);
-}
-.section-calculator__title {
-    margin-bottom: 36px;
-    font-weight: var(--font-weight);
-    font-size: var(--font-size);
 }
 .calculator-container {
     display: flex;
