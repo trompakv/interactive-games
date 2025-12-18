@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     padding: 25px 0;
+    color: var(--color);
 
     background-color: var(--bg-color);
 }
@@ -31,6 +32,7 @@
 
 .header__left__links__link {
     position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,6 +91,7 @@
     flex-direction: column;
 
     border: 1px solid var(--color);
+
     border-top: none;
     border-radius: 0px 0px 20px 20px;
 
@@ -151,7 +154,7 @@
 
         background: #fff;
         background-image: url("/img/sun.svg");
-        background-position: 75% 75%;
+        background-position: 50% 50%;
         background-size: 15px;
         background-repeat: no-repeat;
 
