@@ -4,7 +4,6 @@
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  position: relative;
   z-index: 2;
   background-color: var(--bg-color);
 }
