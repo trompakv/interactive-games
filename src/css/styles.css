@@ -2,6 +2,7 @@
 @import url("./reset.css");
 @import url("./slider.css");
 @import url("./header.css");
+@import url("./birthday.css");
 @import url("./calculator.css");
 @import url("./footer.css");
 
@@ -11,25 +12,73 @@
     --line-height: 24px;
     --font-weight: 400;
 
-  --color: #161616;
-  --bg-color: #fff;
-  --bg-hover-color: #eeeeee;
+    --color: #161616;
+    --bg-color: #fff;
+    --bg-hover-color: #eeeeee;
 }
 :root[data-theme="dark"] {
-  --color: #ebebeb;
-  --bg-color: #080808;
-  --bg-hover-color: #313131;
+    --color: #ebebeb;
+    --bg-color: #080808;
+    --bg-hover-color: #313131;
 }
 :root[data-theme="dark"] .logo {
-  filter: invert(100%);
+    filter: invert(100%);
 }
 body {
-  background: url("/img/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+    background: url("/img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: var(--font-family);
 }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--bg-color);
+    color: var(--color);
+
+    gap: 70px;
+}
+
+.title__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+section {
+    position: relative;
+}
+
+section::before {
+    content: "";
+
+    width: 100px;
+    height: 1px;
+    background-color: var(--color);
+
+    top: 0px;
+    left: 0;
+}
+
+.section__title {
+    text-align: center;
+    font-weight: var(--font-weight);
+}
+
+.section__subtitle {
+    font-weight: var(--font-weight);
+}
+
 .container {
-  max-width: 1090px;
-  margin: 0 auto;
-  padding: 0 10px;
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 10px;
 }

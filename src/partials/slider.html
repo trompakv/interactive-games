@@ -1,41 +1,22 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наша Команда</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <section class="team-section team-slider-wrapper"> 
-            
-            <hr class="team-divider">
+<section class="team-section team-slider-wrapper container">
+    <h2 class="team-title">Наша команда</h2>
 
-            <h2 class="team-title">Наша команда</h2>
+    <div class="team-slider-container">
+        <button class="team-arrow team-arrow-left" id="prevBtn">
+            <div class="team-arrow-icon"></div>
+        </button>
 
-            <div class="team-slider-container">
-                <button class="team-arrow team-arrow-left" id="prevBtn">
-                    <div class="team-arrow-icon"></div>
-                </button>
+        <div class="team-student-card">
+            <img src="" alt="Фото студента" class="team-student-photo" id="photo">
 
-                <div class="team-student-card">
-                    <img src="" alt="Фото студента" class="team-student-photo" id="photo">
-                    
-                    <h3 class="team-student-name" id="name">Ім'я</h3>
-                    <p class="team-student-info" id="info">Опис роботи</p>
-                </div>
+            <h3 class="team-student-name" id="name">Ім'я</h3>
+            <p class="team-student-info" id="info">Опис роботи</p>
+        </div>
 
-                <button class="team-arrow team-arrow-right" id="nextBtn">
-                    <div class="team-arrow-icon"></div>
-                </button>
-            </div>
+        <button class="team-arrow team-arrow-right" id="nextBtn">
+            <div class="team-arrow-icon"></div>
+        </button>
+    </div>
 
-            <div class="team-indicators" id="indicators-container"></div>
-
-            <hr class="team-divider">
-        </section>
-        
-    </div> <script src="script.js"></script>
-</body>
-</html>
+    <div class="team-indicators" id="indicators-container"></div>
+</section>
