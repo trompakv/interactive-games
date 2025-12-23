@@ -9,8 +9,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     
-  <script type="module" crossorigin src="/interactive-games/assets/index-48ed5936.js"></script>
-  <link rel="stylesheet" href="/interactive-games/assets/index-5c003386.css">
+  <script type="module" crossorigin src="/interactive-games/assets/index-f0f5684a.js"></script>
+  <link rel="stylesheet" href="/interactive-games/assets/index-b1b1731b.css">
 </head>
 
 <body>
@@ -37,6 +37,31 @@
         </div>
     </div>
 </header>
+    <section>
+    <button class="open-btn" onclick="openModal()">modal</button>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">✕</span>
+
+        <p class="title">Привіт!</p>
+
+        <p class="subtitle">
+            Ви потрапили на сайт інтерактивних ігор та завдань<br>
+            Сподіваємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
+            Бажаємо Вам гарно провести час!
+        </p>
+
+        <label class="input-label">Введіть своє ім’я:</label>
+
+        <input type="text" placeholder="Ваше ім’я…" class="name-input">
+
+        <button class="save-btn">Зберегти</button>
+
+    </div>
+</div>
+</section>
     <main class="container">
         <div class="title__section container">
             <h1 class="section__title">Популярні інтерактивні ігри</h1>
