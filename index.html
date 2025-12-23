@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/interactive-games/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +9,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     
-  <script type="module" crossorigin src="/interactive-games/assets/index-7cde648d.js"></script>
-  <link rel="stylesheet" href="/interactive-games/assets/index-33659151.css">
+  <script type="module" crossorigin src="/interactive-games/assets/index-0f442067.js"></script>
+  <link rel="stylesheet" href="/interactive-games/assets/index-69141d17.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                     </ul>
                 </li>
                 <li class="header__left__links__link"><a href="">Наша команда</a></li>
-                <li class="header__left__links__link"><a href="">Команда</a></li>
+                <li class="header__left__links__link"><a href="">Контакти</a></li>
             </ul>
         </div>
         <div class="header__right">
@@ -36,8 +37,25 @@
         </div>
     </div>
 </header>
-    <section class="section-calculator container">
-    <h2 class="section-calculator__title">Калькулятор</h2>
+    <main class="container">
+        <div class="title__section container">
+            <h1 class="section__title">Популярні інтерактивні ігри</h1>
+        </div>
+
+        <section class="birthday container">
+
+    <h2 class="section__subtitle">Перевір в який рік ти народився</h2>
+    <div class="birthday__checker">
+        <form class="birthday__checker__input">
+            <input type="number" placeholder="Введіть рік народження" class="birthday__checker__year" required>
+            <button class="birthday__checker__search" type="submit"><img src="/interactive-games/img/search.svg" class="logo"
+                    alt=""></button>
+        </form>
+        <span class="birthday__checker__result">Ви народилися у високосний рік!</span>
+    </div>
+</section>
+        <section class="section-calculator container" id="calculator">
+    <h2 class="section__subtitle">Калькулятор</h2>
     <div class="calculator-container">
         <input type="text" class="enter-number__primary enter-number" placeholder="Введіть число">
         <div class="calculator-operators">
@@ -51,47 +69,30 @@
         <input type="text" class="input-result enter-number" placeholder="Результат">
     </div>
 </section>
-    <!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наша Команда</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <section class="team-section team-slider-wrapper"> 
-            
-            <hr class="team-divider">
+        <section class="team-section team-slider-wrapper container">
+    <h2 class="team-title">Наша команда</h2>
 
-            <h2 class="team-title">Наша команда</h2>
+    <div class="team-slider-container">
+        <button class="team-arrow team-arrow-left" id="prevBtn">
+            <div class="team-arrow-icon"></div>
+        </button>
 
-            <div class="team-slider-container">
-                <button class="team-arrow team-arrow-left" id="prevBtn">
-                    <div class="team-arrow-icon"></div>
-                </button>
+        <div class="team-student-card">
+            <img src="" alt="Фото студента" class="team-student-photo" id="photo">
 
-                <div class="team-student-card">
-                    <img src="" alt="Фото студента" class="team-student-photo" id="photo">
-                    
-                    <h3 class="team-student-name" id="name">Ім'я</h3>
-                    <p class="team-student-info" id="info">Опис роботи</p>
-                </div>
+            <h3 class="team-student-name" id="name">Ім'я</h3>
+            <p class="team-student-info" id="info">Опис роботи</p>
+        </div>
 
-                <button class="team-arrow team-arrow-right" id="nextBtn">
-                    <div class="team-arrow-icon"></div>
-                </button>
-            </div>
+        <button class="team-arrow team-arrow-right" id="nextBtn">
+            <div class="team-arrow-icon"></div>
+        </button>
+    </div>
 
-            <div class="team-indicators" id="indicators-container"></div>
+    <div class="team-indicators" id="indicators-container"></div>
+</section>
 
-            <hr class="team-divider">
-        </section>
-        
-    </div> <script src="script.js"></script>
-</body>
-</html>
+    </main>
     <footer class="footer">
     <div class="footer-container container">
         <a class="footer-logo_link" href="#"><img class="footer-logo logo" src="/interactive-games/img/logo.svg" alt="footer-img"></a>
@@ -111,12 +112,12 @@
                         target="_blank">Instagram: CodingMagic</a></li>
             </ul>
         </div>
-        <section id="footer-form">
+        <div id="footer-form">
             <input id="emailInput" type="text" placeholder="Ваша ел. адреса...">
             <button id="sendBtn">Підписатись</button>
             <p class="footer-form__text">*Підписавшись, Ви зможете отримувати інформацію про новинки на сайті</p>
             <div id="footerMsg"></div>
-        </section>
+        </div>
     </div>
 </footer>
 <div id="subscribeModal" class="modal-overlay">
@@ -137,7 +138,8 @@
         </ul>
     </div>
 </div>
-  
+
     
-  </body>
+</body>
+
 </html>
