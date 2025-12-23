@@ -1,10 +1,16 @@
-.section-tite{
+.container{
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 20px;
+
+}
+.section-title{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .field{
-width: 720px;
+width:770;
 height: 220px;
 border-radius: 37px ;
 border: 2px solid #000;
