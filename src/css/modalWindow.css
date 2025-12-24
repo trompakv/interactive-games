@@ -55,6 +55,10 @@ body {
     margin-bottom: 10px;
 }
 
+.modal {
+    z-index: 1000;
+}
+
 .name-input {
     width: 75%;
     padding: 15px 20px;

@@ -1,8 +1,6 @@
 .guess_num {
     background-color: #ffff;
     font-family: sans-serif;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .heading {
@@ -16,16 +14,31 @@
     margin-left: 390px;
 }
 
-.small-line {
-    width: 1100px; /* length of the line */
-    height: 2px; /* thickness */
-    background-color: #333; /* color */
-    border: none; /* remove default border */
-    margin: 10px auto; /* center horizontally and add spacing */
+.small-line1 {
+    width: 1100px;      
+    height: 2px;        
+    background-color: #333;  
+    border: none;       
+    margin: 10px auto;  
+}
+
+.small-line2 {
+    width: 1100px;      
+    height: 2px;        
+    background-color: #333;  
+    border: none;       
+    margin: 10px auto;  
 }
 
 .input-number-box {
-    width: 190px;
-    height: 55px;
     border-radius: 20px;
+    padding: 10px 80px 10px 10px;
+    margin-right: 36px;
+    margin-bottom: 18px;
+    background-color: #d7d7d7;
+    color: #7e7e7e;
+    outline: none;
+    border: 1px solid #cfcfcf;
+    gap: 10px;
+    padding-left: 10px;
 }
