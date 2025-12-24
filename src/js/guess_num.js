@@ -3,7 +3,12 @@ const computerNum = Math.floor(Math.random() * 10) + 1;
 const inputBox = document.getElementById("enterNum");
 
 const result = document.createElement("p");
-document.body.appendChild(result);
+
+const section = document.querySelector("section.body");
+const hr = section.querySelector("hr.small-line2"); 
+
+section.insertBefore(result, hr);
+
 
 
 function checkGuess() {
