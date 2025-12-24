@@ -17,13 +17,12 @@
 }
 
 .small-line {
-    width: 1100px;       /* length of the line */
-    height: 2px;        /* thickness */
-    background-color: #333;  /* color */
-    border: none;       /* remove default border */
-    margin: 10px auto;  /* center horizontally and add spacing */
+    width: 1100px; /* length of the line */
+    height: 2px; /* thickness */
+    background-color: #333; /* color */
+    border: none; /* remove default border */
+    margin: 10px auto; /* center horizontally and add spacing */
 }
-
 
 .input-number-box {
     width: 190px;

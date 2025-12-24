@@ -8,17 +8,15 @@ body {
     margin: 40px;
 }
 
-
 .modal {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(4px);
     justify-content: center;
     align-items: center;
 }
-
 
 .modal-content {
     position: relative;
@@ -27,9 +25,8 @@ body {
     padding: 40px 50px 60px;
     border-radius: 30px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
-
 
 .close {
     position: absolute;
@@ -38,7 +35,6 @@ body {
     font-size: 26px;
     cursor: pointer;
 }
-
 
 .title {
     font-size: 24px;
@@ -59,7 +55,6 @@ body {
     margin-bottom: 10px;
 }
 
-
 .name-input {
     width: 75%;
     padding: 15px 20px;
@@ -73,7 +68,6 @@ body {
 .name-input:focus {
     border-color: #000;
 }
-
 
 .save-btn {
     padding: 12px 35px;
@@ -90,7 +84,6 @@ body {
     transform: translateY(2px);
     box-shadow: 0 2px 0 #333;
 }
-
 
 .shape {
     position: absolute;
@@ -109,20 +102,17 @@ body {
     left: -60px;
 }
 
-
 .puzzle {
     bottom: 15%;
     left: -60px;
     border-radius: 5px;
 }
 
-
 .code {
     top: 30%;
     right: -60px;
     border-radius: 6px;
 }
-
 
 .board {
     bottom: 15%;
