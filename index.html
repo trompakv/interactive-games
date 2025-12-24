@@ -9,8 +9,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     
-  <script type="module" crossorigin src="/interactive-games/assets/index-a6ff89ea.js"></script>
-  <link rel="stylesheet" href="/interactive-games/assets/index-653368d3.css">
+  <script type="module" crossorigin src="/interactive-games/assets/index-6afd4e05.js"></script>
+  <link rel="stylesheet" href="/interactive-games/assets/index-e50eecbe.css">
 </head>
 
 <body>
@@ -25,8 +25,8 @@
                         <li class="header__left__links__dropdown__link">Ознайомчий</li>
                     </ul>
                 </li>
-                <li class="header__left__links__link"><a href="">Наша команда</a></li>
-                <li class="header__left__links__link"><a href="">Контакти</a></li>
+                <li class="header__left__links__link"><a href="#team">Наша команда</a></li>
+                <li class="header__left__links__link"><a href="#footer">Контакти</a></li>
             </ul>
         </div>
         <div class="header__right">
@@ -60,12 +60,15 @@
     </div>
 </section>
 
-    <main class="container">
-        <div class="title__section container">
-            <h1 class="section__title">Популярні інтерактивні ігри</h1>
-        </div>
+    <main>
+        <div class="main__wrapper container">
+            <div class="title__section container">
+                <h1 class="section__title">Популярні інтерактивні ігри</h1>
+            </div>
 
-        <section class="birthday container">
+            <div class="section_line"></div>
+
+            <section class="section birthday container" id="birthday">
 
     <h2 class="section__subtitle">Перевір в який рік ти народився</h2>
     <div class="birthday__checker">
@@ -77,21 +80,23 @@
         <span class="birthday__checker__result">Введіть рік</span>
     </div>
 </section>
-        <section class="body">
-    <hr class="small-line1">
+            <div class="section_line"></div>
+            <section class="guess_num section container" id="guess_num">
+    <h2 class="section__subtitle">
+        Вгадай число, яке загадав комп’ютер
+    </h2>
 
-    <div class="header">
-        <h1>Вгадай число, яке загадав комп’ютер</h1>
-    </div>
-    <br>
-    <br>
-    <div class="guess">
-        <input id="enterNum" type="number" class="input-number-box" placeholder="Введіть число">
-    </div>
 
-<hr class="small-line2">
+    <div class="guess_num__game">
+        <div class="guess_num__input">
+            <input type="number" placeholder="Введіть число" class="guess_num__number" required>
+            <button class="guess_num__search" type="submit"><img src="/interactive-games/img/search.svg" class="logo" alt=""></button>
+        </div>
+        <span class="guess_num__result">Вітаю, ви вгадали число! (number)</span>
+    </div>
 </section>
-        <section class="section-calculator container" id="calculator">
+            <div class="section_line"></div>
+            <section class="section-calculator container section" id="calculator">
     <h2 class="section__subtitle">Калькулятор</h2>
     <div class="calculator-container">
         <input type="text" class="enter-number__primary enter-number" placeholder="Введіть число">
@@ -106,7 +111,8 @@
         <input type="text" class="input-result enter-number" placeholder="Результат">
     </div>
 </section>
-        <section>
+            <div class="section_line"></div>
+            <section class="section container" id="dinosaur">
     <div class="heading">
         <h2>Google динозавр</h2>
     </div>
@@ -115,7 +121,8 @@
         <div id="cactus"></div>
     </div>
 </section>
-        <section class="team-section team-slider-wrapper container">
+            <div class="section_line"></div>
+            <section class="section team-section team-slider-wrapper container" id="team">
     <h2 class="team-title">Наша команда</h2>
 
     <div class="team-slider-container">
@@ -137,9 +144,9 @@
 
     <div class="team-indicators" id="indicators-container"></div>
 </section>
-
+        </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
     <div class="footer-container container">
         <a class="footer-logo_link" href="#"><img class="footer-logo logo" src="/interactive-games/img/logo.svg" alt="footer-img"></a>
         <div class="footer-communication">
