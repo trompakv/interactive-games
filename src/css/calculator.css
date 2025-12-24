@@ -1,8 +1,11 @@
 .section-calculator {
-    text-align: center;
-    box-sizing: border-box;
     background-color: var(--bg-color);
     color: var(--color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .calculator-container {
     display: flex;

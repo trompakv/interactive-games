@@ -7,7 +7,7 @@ const teamData = [
     {
         name: "Кароліна",
         info: "Гра «Камінь-Ножиці-Папір»,",
-        photo: "img/chel.png",
+        photo: "img/karolina.png",
     },
     {
         name: "Вероніка",

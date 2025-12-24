@@ -20,31 +20,46 @@
     --bg-hover-color: #eeeeee;
 }
 :root[data-theme="dark"] {
-    --color: #ebebeb;
-    --bg-color: #080808;
+    --color: #f0f0f0;
+    --bg-color: #111111;
     --bg-hover-color: #313131;
 }
 :root[data-theme="dark"] .logo {
     filter: invert(100%);
 }
-body {
-    background: url("/img/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
 
+* {
     font-family: var(--font-family);
+    box-sizing: border-box;
 }
 
 main {
+    background-image: url("/img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+.main__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     background-color: var(--bg-color);
-    color: var(--color);
 
-    gap: 70px;
+    gap: 30px;
+}
+
+.section_line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 550px;
+    height: 1px;
+    border-radius: 10px;
+    background-color: var(--color);
 }
 
 .title__section {
@@ -53,22 +68,13 @@ main {
     justify-content: center;
 
     width: 100%;
-    background-color: var(--bg-color);
 }
 
-section {
+.section {
     position: relative;
-}
+    background-color: var(--bg-color);
 
-section::before {
-    content: "";
-
-    width: 100px;
-    height: 1px;
-    background-color: var(--color);
-
-    top: 0px;
-    left: 0;
+    width: 100%;
 }
 
 .section__title {

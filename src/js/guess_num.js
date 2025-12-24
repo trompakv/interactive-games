@@ -1,37 +1,35 @@
-const computerNum = Math.floor(Math.random() * 10) + 1;
+let computerNum = Math.floor(Math.random() * 10) + 1;
 
-const inputBox = document.getElementById("enterNum");
+const inputBox = document.querySelector(".guess_num__number");
+const btn = document.querySelector(".guess_num__search");
 
-const result = document.createElement("p");
-
-const section = document.querySelector("section.body");
-const hr = section.querySelector("hr.small-line2"); 
-
-section.insertBefore(result, hr);
-
-
+const result = document.querySelector(".guess_num__result");
 
 function checkGuess() {
-const userGuess = Number(inputBox.value);
+    const userGuess = Number(inputBox.value);
 
-if (isNaN(userGuess)) {
-    result.textContent = `недійсний вхід`;
-    result.style.color = 'yellow';
-} else if (userGuess === computerNum) {
-    result.textContent = `Вітаю, ви вгадали число! ${computerNum}`;
-    result.style.color = 'green';
-} else if (userGuess < computerNum) {
-    result.textContent = `Ні, число більше. Спробуйте ще раз.`;
-    result.style.color = 'orange';
-} else {
-    result.textContent = `Ні, число менше. Спробуйте ще раз.`;
-    result.style.color = 'orange';
-}
+    if (isNaN(userGuess)) {
+        result.textContent = `недійсний вхід`;
+        result.style.color = "yellow";
+    } else if (userGuess === computerNum) {
+        result.textContent = `Вітаю, ви вгадали число! ${computerNum}`;
+        result.style.color = "green";
+
+        computerNum = Math.floor(Math.random() * 10) + 1;
+    } else if (userGuess < computerNum) {
+        result.textContent = `Ні, число більше. Спробуйте ще раз.`;
+        result.style.color = "orange";
+    } else {
+        result.textContent = `Ні, число менше. Спробуйте ще раз.`;
+        result.style.color = "orange";
+    }
 }
 
-const onInputBoxKeydown = function(event) {
-    if (event.key === 'Enter') {
+const onInputBoxKeydown = function (event) {
+    if (event.key === "Enter") {
         checkGuess();
-    }}
-    
-inputBox.addEventListener('keydown', onInputBoxKeydown)
+    }
+};
+
+inputBox.addEventListener("keydown", onInputBoxKeydown);
+btn.addEventListener("click", checkGuess);
