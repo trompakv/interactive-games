@@ -1,5 +1,8 @@
 .stone-papyru {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .title {
@@ -10,6 +13,7 @@
     color: #000;
     letter-spacing: 0.3px;
     justify-content: center;
+    text-align: center;
 }
 
 .content {
