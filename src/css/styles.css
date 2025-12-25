@@ -5,6 +5,7 @@
 @import url("./modalWindow.css");
 @import url("./birthday.css");
 @import url("./guess_num.css");
+@import url("./stone-papyrus.css");
 @import url("./calculator.css");
 @import url("./dinasour.css");
 @import url("./max-number.css");
@@ -92,4 +93,3 @@ main {
     margin: 0 auto;
     padding: 0 10px;
 }
-
