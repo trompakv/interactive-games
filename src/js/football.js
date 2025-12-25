@@ -2,7 +2,7 @@ const footballBox = document.querySelector("#football")
 console.log(footballBox)
 
 const containerElement = document.createElement("div")
-containerElement.classList.add("container")
+containerElement.classList.add("container");
 console.log(containerElement)
 
 footballBox.appendChild(containerElement)
