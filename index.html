@@ -9,8 +9,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     
-  <script type="module" crossorigin src="/interactive-games/assets/index-5685fe76.js"></script>
-  <link rel="stylesheet" href="/interactive-games/assets/index-b779c5bb.css">
+  <script type="module" crossorigin src="/interactive-games/assets/index-02fcdc16.js"></script>
+  <link rel="stylesheet" href="/interactive-games/assets/index-2da9c15e.css">
 </head>
 
 <body>
@@ -97,58 +97,39 @@
 </section>
             <div class="section_line"></div>
             <section>
-  <div class="container">
-    <!-- <div class="game-wrapper"> -->
-    <div class="stone-papyru">
-      <h1 class="title">Камінь - ножиці - папір</h1>
-      <div class="content">
-        <ul class="icons">
-          <li class="icons-item">
-            <img
-              class="choice"
-              width="60"
-              height="60"
-              data-choice="stone"
-              src="../img/stone.png"
-              alt="stone"
-            />
-          </li>
-          <li class="icons-item">
-            <img
-              class="choice"
-              width="60"
-              height="60"
-              data-choice="scissors"
-              src="../img/scissors.png"
-              alt="scissors"
-            />
-          </li>
-          <li class="icons-item">
-            <img
-              class="choice"
-              width="60"
-              height="60"
-              data-choice="paper"
-              src="../img/paper.png"
-              alt="paper"
-            />
-          </li>
-        </ul>
-        <div class="block">
-          <p><b>Рахунок:</b></p>
-          <p>Комп’ютер — <span id="compScore">0</span></p>
-          <p>Ви — <span id="userScore">0</span></p>
+    <div class="container">
+        <!-- <div class="game-wrapper"> -->
+        <div class="stone-papyru">
+            <h1 class="title">Камінь - ножиці - папір</h1>
+            <div class="content">
+                <ul class="icons">
+                    <li class="icons-item">
+                        <img class="choice" width="60" height="60" data-choice="stone" src="../img/stone.png"
+                            alt="stone" />
+                    </li>
+                    <li class="icons-item">
+                        <img class="choice" width="60" height="60" data-choice="scissors" src="../img/scissors.png"
+                            alt="scissors" />
+                    </li>
+                    <li class="icons-item">
+                        <img class="choice" width="60" height="60" data-choice="paper" src="../img/paper.png"
+                            alt="paper" />
+                    </li>
+                </ul>
+                <div class="block">
+                    <p><b>Рахунок:</b></p>
+                    <p>Комп’ютер — <span id="compScore">0</span></p>
+                    <p>Ви — <span id="userScore">0</span></p>
+                </div>
+            </div>
         </div>
-      </div>
+        <p class="result" aria-live="polite"></p>
+        <button class="reveal-btn" type="button">
+            <span class="reveal-label">Варіант комп’ютера</span>
+        </button>
+        <!-- </div> -->
     </div>
-    <p class="result" aria-live="polite"></p>
-    <button class="reveal-btn" type="button">
-      <span class="reveal-label">Варіант комп’ютера</span>
-    </button>
-    <!-- </div> -->
-  </div>
 </section>
-
             <div class="section_line"></div>
             <section class="section-calculator container section" id="calculator">
     <h2 class="section__subtitle">Калькулятор</h2>
@@ -176,19 +157,18 @@
     </div>
 </section>
             <div class="section_line"></div>
-            <section id="max-number">
-<!-- <div class="container">
-    <div>
-        <h2 class="section-title">Введіть 3 числа</h2>
+            <section class="max-numbers" id="max-number">
+    <!-- <div class="container">
         <div>
-            <li><input type="number" placeholder="Введіть число"></li>
-            <li><input type="number" placeholder="Введіть число"></li>
-            <li><input type="number" placeholder="Введіть число"></li>
-           
+            <h2 class="section-title">Введіть 3 числа</h2>
+            <div>
+                <li><input type="number" placeholder="Введіть число"></li>
+                <li><input type="number" placeholder="Введіть число"></li>
+                <li><input type="number" placeholder="Введіть число"></li>
+            </div>
         </div>
-    </div>
-    </div>  -->
-    </section> 
+    </div> -->
+</section>
             <div class="section_line"></div>
             <section class="section team-section team-slider-wrapper container" id="team">
     <h2 class="team-title">Наша команда</h2>
@@ -212,7 +192,7 @@
 
     <div class="team-indicators" id="indicators-container"></div>
 </section>
-          
+
         </div>
     </main>
     <footer class="footer" id="footer">
