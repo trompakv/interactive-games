@@ -1,27 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("./reset.css");
-@import url("./max-number.css");
+@import url("./slider.css");
+@import url("./header.css");
+@import url("./modalWindow.css");
+@import url("./birthday.css");
+@import url("./guess_num.css");
+@import url("./stone-papyrus.css");
+@import url("./calculator.css");
+@import url("./dinasour.css");
 @import url("./football.css");
+@import url("./max-number.css");
+@import url("./footer.css");
+
 :root {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+    --font-family: "Montserrat Alternates", sans-serif;
+    --font-size: 16px;
+    --line-height: 24px;
+    --font-weight: 400;
 
-    color: #242424;
-    background-color: rgba(255, 255, 255, 0.87);
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+    --color: #161616;
+    --bg-color: #fff;
+    --bg-hover-color: #eeeeee;
+}
+:root[data-theme="dark"] {
+    --color: #f0f0f0;
+    --bg-color: #111111;
+    --bg-hover-color: #313131;
+}
+:root[data-theme="dark"] .logo {
+    filter: invert(100%);
 }
 
-body {
-    background: url("../img/background.png");
+* {
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url("/img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+.main__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+
+    gap: 30px;
+}
+
+.section_line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 550px;
+    height: 1px;
+    border-radius: 10px;
+    background-color: var(--color);
+}
+
+.title__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.section {
+    position: relative;
+    background-color: var(--bg-color);
+
+    width: 100%;
+}
+
+.section__title {
+    text-align: center;
+    font-weight: var(--font-weight);
+}
+
+.section__subtitle {
+    font-weight: var(--font-weight);
 }
 
 .container {
@@ -29,4 +94,3 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
-

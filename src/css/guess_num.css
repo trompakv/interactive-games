@@ -1,0 +1,54 @@
+.guess_num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.guess_num__game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.guess_num__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 10px 0 10px 10px;
+    gap: 10px;
+    position: relative;
+
+    outline: none;
+    overflow: hidden;
+
+    background-color: #d7d7d7;
+    text-align: center;
+    box-shadow: 3px 3px 0px 0px #00000040;
+}
+
+.guess_num__number {
+    width: 275px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.guess_num__search {
+    padding: 10px 15px 10px 10px;
+    border: none;
+    background: var(--color);
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.birthday__checker__search img {
+    width: 15px;
+    height: 15px;
+}
