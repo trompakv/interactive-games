@@ -1,0 +1,39 @@
+.container{
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 20px;
+
+}
+.section-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.field{
+width:770;
+height: 220px;
+border-radius: 37px ;
+border: 2px solid #000;
+background-color:#5ABB58 ;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+     background-image: url(../img/ball.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: spin 1s linear infinite;
+   }
+
+ @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+  

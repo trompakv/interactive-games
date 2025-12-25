@@ -5,6 +5,7 @@ import "./js/guess_num";
 import "./js/stone-papyrus";
 import "./js/calculator";
 import "./js/dinasour";
+import "./js/football"
 import "./js/max-number";
 import "./js/slider";
 import "./js/footer";
