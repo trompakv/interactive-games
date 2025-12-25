@@ -33,7 +33,12 @@
 
 * {
     font-family: var(--font-family);
+    font-weight: var(--font-weight);
     box-sizing: border-box;
+}
+
+body {
+    font-size: var(--font-size);
 }
 
 main {
@@ -49,19 +54,19 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--bg-color);
-
     gap: 30px;
+
+    background-color: var(--bg-color);
 }
 
 .section_line {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 550px;
     height: 1px;
     border-radius: 10px;
+
     background-color: var(--color);
 }
 
@@ -69,15 +74,15 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 100%;
 }
 
 .section {
     position: relative;
-    background-color: var(--bg-color);
 
     width: 100%;
+
+    background-color: var(--bg-color);
 }
 
 .section__title {

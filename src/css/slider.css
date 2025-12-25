@@ -1,45 +1,49 @@
 .team-slider-wrapper {
+    position: relative;
+
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    text-align: center;
     padding: 20px 0;
-    position: relative;
+
+    text-align: center;
     z-index: 2;
     background-color: var(--bg-color);
 }
 
 .team-title {
-    font-size: 32px;
-    font-weight: var(--font-weight);
     margin-bottom: 50px;
+
+    font-size: 32px;
     color: var(--color);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .team-slider-container {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    position: relative;
     padding: 0 10px;
 }
 
 .team-arrow {
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 60px;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 60px;
+    height: 100px;
+    border: none;
+    padding: 0;
+    
+    background: none;
+    cursor: pointer;
     transition: transform 0.2s, opacity 0.3s;
     outline: none;
     -webkit-tap-highlight-color: transparent;
-    padding: 0;
 }
 
 .team-arrow:hover {
@@ -52,6 +56,7 @@
     height: 25px;
     border-top: 2px solid var(--color);
     border-right: 2px solid var(--color);
+
     transform: rotate(45deg);
 }
 
@@ -68,6 +73,7 @@
     max-width: 400px;
     min-height: 300px;
     margin: 0 10px;
+
     text-align: center;
 }
 
@@ -75,27 +81,30 @@
     width: 180px;
     height: 180px;
     border-radius: 35px;
+    margin-bottom: 25px;
+
     background-color: var(--photo-placeholder-bg);
     object-fit: cover;
-    margin-bottom: 25px;
     box-shadow: var(--card-shadow);
 }
 
 .team-student-name {
-    font-size: 24px;
     margin: 0 0 10px 0;
+
+    font-size: 24px;
     font-weight: 700;
     color: var(--color);
 }
 
 .team-student-info {
+    max-width: 350px;
+    margin: 0;
+    padding: 0 10px;
+
     font-size: 16px;
     color: var(--color);
     opacity: 0.7;
-    margin: 0;
     line-height: 1.5;
-    padding: 0 10px;
-    max-width: 350px;
 }
 
 .team-indicators {
@@ -108,12 +117,13 @@
 .team-indicators .indicator {
     width: 30px;
     height: 4px;
-    background-color: var(--indicator-color);
+    border-radius: 4px;
+    
+    background-color: #aaa;
     cursor: pointer;
     transition: background-color 0.3s;
-    border-radius: 4px;
 }
 
 .team-indicators .indicator.active {
-    background-color: var(--indicator-active-color);
+    background-color: #000;
 }
