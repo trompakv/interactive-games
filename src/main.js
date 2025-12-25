@@ -2,6 +2,7 @@ import "./js/toggleTheme";
 import "./js/modalWindow";
 import "./js/birthday";
 import "./js/guess_num";
+import "./js/stone-papyrus";
 import "./js/calculator";
 import "./js/dinasour";
 import "./js/max-number";
