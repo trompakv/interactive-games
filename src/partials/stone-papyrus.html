@@ -1,52 +1,34 @@
 <section>
-  <div class="container">
-    <!-- <div class="game-wrapper"> -->
-    <div class="stone-papyru">
-      <h1 class="title">Камінь - ножиці - папір</h1>
-      <div class="content">
-        <ul class="icons">
-          <li class="icons-item">
-            <img
-              class="choice"
-              width="60"
-              height="60"
-              data-choice="stone"
-              src="../img/stone.png"
-              alt="stone"
-            />
-          </li>
-          <li class="icons-item">
-            <img
-              class="choice"
-              width="60"
-              height="60"
-              data-choice="scissors"
-              src="../img/scissors.png"
-              alt="scissors"
-            />
-          </li>
-          <li class="icons-item">
-            <img
-              class="choice"
-              width="60"
-              height="60"
-              data-choice="paper"
-              src="../img/paper.png"
-              alt="paper"
-            />
-          </li>
-        </ul>
-        <div class="block">
-          <p><b>Рахунок:</b></p>
-          <p>Комп’ютер — <span id="compScore">0</span></p>
-          <p>Ви — <span id="userScore">0</span></p>
+    <div class="container">
+        <!-- <div class="game-wrapper"> -->
+        <div class="stone-papyru">
+            <h1 class="title">Камінь - ножиці - папір</h1>
+            <div class="content">
+                <ul class="icons">
+                    <li class="icons-item">
+                        <img class="choice" width="60" height="60" data-choice="stone" src="../img/stone.png"
+                            alt="stone" />
+                    </li>
+                    <li class="icons-item">
+                        <img class="choice" width="60" height="60" data-choice="scissors" src="../img/scissors.png"
+                            alt="scissors" />
+                    </li>
+                    <li class="icons-item">
+                        <img class="choice" width="60" height="60" data-choice="paper" src="../img/paper.png"
+                            alt="paper" />
+                    </li>
+                </ul>
+                <div class="block">
+                    <p><b>Рахунок:</b></p>
+                    <p>Комп’ютер — <span id="compScore">0</span></p>
+                    <p>Ви — <span id="userScore">0</span></p>
+                </div>
+            </div>
         </div>
-      </div>
+        <p class="result" aria-live="polite"></p>
+        <button class="reveal-btn" type="button">
+            <span class="reveal-label">Варіант комп’ютера</span>
+        </button>
+        <!-- </div> -->
     </div>
-    <p class="result" aria-live="polite"></p>
-    <button class="reveal-btn" type="button">
-      <span class="reveal-label">Варіант комп’ютера</span>
-    </button>
-    <!-- </div> -->
-  </div>
 </section>
